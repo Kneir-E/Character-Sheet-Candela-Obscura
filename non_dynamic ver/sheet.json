@@ -1,0 +1,8 @@
+{
+  "html": "candela_obscura_fanmade.html",
+  "css": "candela_obscura_fanmade.css",
+  "authors": "Gillian Florin",
+  "preview": "candela_obscura_logo.png",
+  "instructions": "STR is the stat, STRMOD is the stat mod STRMODLevel is the mod + level",
+  "legacy": true
+}

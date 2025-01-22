@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="character_sheet.css">
+    <script src="character_sheet.js" defer></script>
+    <title>Character Sheet</title>
+</head>
+<body>
+    <div id="nav_bar">
+        <img class="nav_img" src="pics/candela_obscura_logo_stacked_gold.png" alt="Candela_Obscura_logo.png">
+        <div class="nav_container">
+            <span>Name:</span>
+            <span id="nb_name">Name</span>
+            <br>
+            <span>Pronouns:</span>
+            <span id="nb_pronoun">Pronouns</span>
+            <br>
+            <span>Circle:</span>
+            <span id="nb_circle">Circle</span>
+        </div>
+        <div class="nav_container">
+            <span>Style:</span>
+            <span id="nb_style">Style</span>
+            <br>
+            <span>Catalyst:</span>    
+            <span id="nb_catalyst">Catalyst</span>
+            <br>
+            <span>Question:</span>
+            <span id="nb_question">Question</span>
+        </div>
+        <span id="edit_nav" class="material-symbols-outlined nav_edit icon_button">edit</span>
+    </div>
+
+
+    <div class="main">
+        <!-- NERVE, CUNNING, AND INTUITION PANEL -->
+        <div class="nerve_panel">
+            <div class="np_subpanel">
+                <div class="subpanel_title_bar">
+                    <p>NERVE</p>
+                    <div class="drive_and_max_node_container">
+                        <div class="drive_and_max_titles_container">
+                            <p class="drives_title">Drives:</p>
+                            <p class="max_title">Max:</p>
+                        </div>
+                        <div class="drive_and_max_list_container">
+                            <div id="" class="drive_container">
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive_and_max_spacer"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive_and_max_spacer"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                            </div>
+                            <div id="" class="max_container">
+                                <div class="max drive_max_active"></div>
+                                <div class="max drive_max_active"></div>
+                                <div class="max drive_max_active"></div>
+                                <div class="drive_and_max_spacer"></div>
+                                <div class="max"></div>
+                                <div class="max"></div>
+                                <div class="max"></div>
+                                <div class="drive_and_max_spacer"></div>
+                                <div class="max"></div>
+                                <div class="max"></div>
+                                <div class="max"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subpanel_resistances_container">
+                    <div class="resistance_container">
+                        <div class="resistance_and_line resistance_and_line_active">
+                            <div class="resistance_line invisible"></div>
+                            <span class="material-symbols-outlined resistance">radio_button_unchecked</span>
+                        </div>
+                        <div class="resistance_and_line resistance_and_line_active">
+                            <div class="resistance_line"></div>
+                            <span class="material-symbols-outlined resistance">radio_button_unchecked</span>
+                        </div>
+                        <div class="resistance_and_line">
+                            <div class="resistance_line"></div>
+                            <span class="material-symbols-outlined resistance">radio_button_unchecked</span>
+                        </div>
+                    </div>
+                    <div class="resistance_caption">RESISTANCE</div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Move</span>
+                        <span class="subpanel_content_text">run, dodge, navigate</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <span class="material-symbols-outlined attrib_points attrib_points_active">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                    </div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Strike</span>
+                        <span class="subpanel_content_text">punch, break, knock down</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <span class="material-symbols-outlined attrib_points attrib_points_active">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                    </div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Control</span>
+                        <span class="subpanel_content_text">drive, shoot, finesse</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <span class="material-symbols-outlined attrib_points attrib_points_active">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                    </div>
+                </div>
+            </div>
+            <div class="np_subpanel">
+                <div class="subpanel_title_bar">
+                    <p>CUNNING</p>
+                    <div class="drive_and_max_node_container">
+                        <div class="drive_and_max_titles_container">
+                            <p class="drives_title">Drives:</p>
+                            <p class="max_title">Max:</p>
+                        </div>
+                        <div class="drive_and_max_list_container">
+                            <div id="" class="drive_container">
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive_and_max_spacer"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive_and_max_spacer"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                            </div>
+                            <div id="" class="max_container">
+                                <div class="max drive_max_active"></div>
+                                <div class="max drive_max_active"></div>
+                                <div class="max drive_max_active"></div>
+                                <div class="drive_and_max_spacer"></div>
+                                <div class="max"></div>
+                                <div class="max"></div>
+                                <div class="max"></div>
+                                <div class="drive_and_max_spacer"></div>
+                                <div class="max"></div>
+                                <div class="max"></div>
+                                <div class="max"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subpanel_resistances_container">
+                    <div class="resistance_container">
+                        <div class="resistance_and_line resistance_and_line_active">
+                            <div class="resistance_line invisible"></div>
+                            <span class="material-symbols-outlined resistance">radio_button_unchecked</span>
+                        </div>
+                        <div class="resistance_and_line resistance_and_line_active">
+                            <div class="resistance_line"></div>
+                            <span class="material-symbols-outlined resistance">radio_button_unchecked</span>
+                        </div>
+                        <div class="resistance_and_line">
+                            <div class="resistance_line"></div>
+                            <span class="material-symbols-outlined resistance">radio_button_unchecked</span>
+                        </div>
+                    </div>
+                    <div class="resistance_caption">RESISTANCE</div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Sway</span>
+                        <span class="subpanel_content_text">convince, command, consort</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <span class="material-symbols-outlined attrib_points attrib_points_active">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                    </div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Read</span>
+                        <span class="subpanel_content_text">interpret body language, spot lies, gather motive</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <span class="material-symbols-outlined attrib_points attrib_points_active">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                    </div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Hide</span>
+                        <span class="subpanel_content_text">sneak, distract, sleight of hand</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <span class="material-symbols-outlined attrib_points attrib_points_active">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                    </div>
+                </div>
+            </div>
+            <div class="np_subpanel">
+                <div class="subpanel_title_bar">
+                    <p>INTUITION</p>
+                    <div class="drive_and_max_node_container">
+                        <div class="drive_and_max_titles_container">
+                            <p class="drives_title">Drives:</p>
+                            <p class="max_title">Max:</p>
+                        </div>
+                        <div class="drive_and_max_list_container">
+                            <div id="" class="drive_container">
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive_and_max_spacer"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive_and_max_spacer"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                                <div class="drive"></div>
+                            </div>
+                            <div id="" class="max_container">
+                                <div class="max drive_max_active"></div>
+                                <div class="max drive_max_active"></div>
+                                <div class="max drive_max_active"></div>
+                                <div class="drive_and_max_spacer"></div>
+                                <div class="max"></div>
+                                <div class="max"></div>
+                                <div class="max"></div>
+                                <div class="drive_and_max_spacer"></div>
+                                <div class="max"></div>
+                                <div class="max"></div>
+                                <div class="max"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subpanel_resistances_container">
+                    <div class="resistance_container">
+                        <div class="resistance_and_line resistance_and_line_active">
+                            <div class="resistance_line invisible"></div>
+                            <span class="material-symbols-outlined resistance">radio_button_unchecked</span>
+                        </div>
+                        <div class="resistance_and_line resistance_and_line_active">
+                            <div class="resistance_line"></div>
+                            <span class="material-symbols-outlined resistance">radio_button_unchecked</span>
+                        </div>
+                        <div class="resistance_and_line">
+                            <div class="resistance_line"></div>
+                            <span class="material-symbols-outlined resistance">radio_button_unchecked</span>
+                        </div>
+                    </div>
+                    <div class="resistance_caption">RESISTANCE</div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Survey</span>
+                        <span class="subpanel_content_text">search, track, spot</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <span class="material-symbols-outlined attrib_points attrib_points_active">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                    </div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Focus</span>
+                        <span class="subpanel_content_text">inspect, analyze, remember</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <span class="material-symbols-outlined attrib_points attrib_points_active">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                    </div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Sense</span>
+                        <span class="subpanel_content_text">attune, channel, reveal</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <span class="material-symbols-outlined attrib_points attrib_points_active">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                        <span class="material-symbols-outlined attrib_points">radio_button_unchecked</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROLE, SPECIALTY, AND ILLUMINATION KEYS PANEL -->
+        <div class="role_panel">
+            <div class="rp_main">
+                <div class="rp_title_container">
+                    <span class="rp_subpanel_title">ROLE: </span>
+                    <select name="role_select" id="role_select">
+                        <option value="0">Slink</option>
+                        <option value="1">Scholar</option>
+                        <option value="2">Face</option>
+                        <option value="3">Weird</option>
+                        <option value="4">Muscle</option>
+                    </select>
+                </div>
+                <div id="role_content_container" class="rp_subpanel">
+                    <div class="rp_content">
+                        <span class="rp_content_title">◆</span>
+                        <span class="rp_content_title">Scout: </span>
+                        <br>
+                        <p class="rp_content_data">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce congue erat enim, quis suscipit est venenatis at. 
+                            Etiam nulla leo, bibendum ac magna eget, bibendum consectetur 
+                            dui. Ut condimentum diam nibh. Aliquam consectetur faucibus 
+                            porta. Pellentesque lacinia tellus a eleifend cursus. 
+                            Cras tellus ante, vehicula non felis id, laoreet tempor augue. 
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="rp_title_container">
+                    <span class="rp_subpanel_title">SPECIALTY: </span>
+                    <span id="specialty_value" class="rp_subpanel_title">Criminal</span>
+                    <span id="add_specialty_content_container" class="material-symbols-outlined icon_button">add</span>
+                </div>
+
+                <div id="specialty_content_container" class="rp_subpanel">
+                    <div class="rp_content">
+                        <span class="rp_content_title">◆</span>
+                        <span class="rp_content_title title_container">Street Smarts: </span>
+                        <span class="material-symbols-outlined icon_button">edit</span>
+                        <span class="material-symbols-outlined icon_button delete_button">delete</span>
+                        <br>
+                        <p class="rp_content_data">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce congue erat enim, quis suscipit est venenatis at. 
+                            Etiam nulla leo, bibendum ac magna eget, bibendum consectetur 
+                            dui. Ut condimentum diam nibh. Aliquam consectetur faucibus 
+                            porta. Pellentesque lacinia tellus a eleifend cursus. 
+                            Cras tellus ante, vehicula non felis id, laoreet tempor augue. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="illumination_keys">
+                <span class="ik_title">ILLUMINATION KEYS</span>
+                <br>
+                <span class="ik_content">Do Something Illegal</span>
+                <span>|</span>
+                <span class="ik_content">Make A Deal</span>
+                <span>|</span>
+                <span class="ik_content">Stand Up To Authority</span>
+            </div>
+        </div>
+
+        <!-- MARKS -->
+        <div class="marks_panel">
+            <div class="marks_title_bar">
+                <p>MARKS</p>
+                <div class="marks_container">
+                    <div id="body_marks">
+                        <div class="mark"></div>
+                        <div class="mark"></div>
+                        <div class="mark"></div>
+                    </div>
+
+                    <div class="marks_spacer"></div>
+
+                    <div id="brain_marks">
+                        <div class="mark"></div>
+                        <div class="mark"></div>
+                        <div class="mark"></div>
+                    </div>
+
+                    <div class="marks_spacer"></div>
+
+                    <div id="bleed_marks">
+                        <div class="mark"></div>
+                        <div class="mark"></div>
+                        <div class="mark"></div>
+                    </div>
+
+                    <div class="marks_spacer"></div>
+                </div>
+            </div>
+            <div class="marks_titles">
+                <p>BODY</p>
+                <div class="marks_spacer"></div>
+                <p>BRAIN</p>
+                <div class="marks_spacer"></div>
+                <p>BLEED</p>
+                <div class="marks_spacer"></div>
+            </div>
+
+            <div class="marks_content">
+                <h2>SCARS: </h2>
+                <div id="scar_1">
+                    <span class="material-symbols-outlined">radio_button_unchecked</span>
+                    <input name="scar_1_input" type="text" class="scar_text ">
+                </div>
+                <div id="scar_2">
+                    <span class="material-symbols-outlined">radio_button_unchecked</span>
+                    <input name="scar_2_input" type="text" class="scar_text ">
+                </div>
+                <div id="scar_3">
+                    <span class="material-symbols-outlined">radio_button_unchecked</span>
+                    <input name="scar_3_input" type="text" class="scar_text ">
+                </div>
+            </div>
+            
+
+            <div class="marks_content">
+                <h2>RELATIONSHIPS: </h2>
+                <input name="rs_in_1a" type="text" class="rs_in_left">
+                <input name="rs_in_1b" type="text" class="rs_in_right">
+                <br>
+                <input name="rs_in_2a" type="text" class="rs_in_left">
+                <input name="rs_in_2b" type="text" class="rs_in_right">
+                <br>
+                <input name="rs_in_3a" type="text" class="rs_in_left">
+                <input name="rs_in_3b" type="text" class="rs_in_right">
+                <br>
+                <input name="rs_in_4" type="text" class="rs_in_left">
+                <input name="rs_in_4b" type="text" class="rs_in_right">
+                <br>
+            </div>
+
+            <div class="marks_content">
+                <h2>GEAR: </h2>
+                <h4>During each assignment, choose up to three: </h4>
+                <form class="gear_select" action="">
+                    <label><input name="gear_1" type="checkbox">Bleed Detector</label>
+                    <label><input name="gear_2" type="checkbox">Hand Weapon</label>
+                    <label><input name="gear_3" type="checkbox">Bleed Containment Vial</label>
+                    <label><input name="gear_4" type="checkbox">Forged Documents</label>
+                    <label><input name="gear_5" type="checkbox">Burglary Equipment</label>
+                    <label><input name="gear_6" type="checkbox">Body Armor (Soak I Body)</label>
+                    <div style="display: inline;"><input name="gear_7" type="checkbox"><input name="gear_text" type="text" class="gear_text"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup_container invisible">
+        <div class="popup">
+            <span class="material-symbols-outlined close_popup">close</span>
+            <div class="popup_spacer"></div>
+            <!-- popup window content WHEN NAMEBAR EDIT is clicked -->
+            <form id="name_bar_input" class="invisible">
+                <div>
+                    <label for="name_inp">Name: </label>
+                    <input type="text" name="name_inp" id="name_inp">
+                </div>
+                <div>
+                    <label for="pron_inp">Pronouns: </label>
+                    <input type="text" name="pron_inp" id="pron_inp">
+                </div>
+                <div>
+                    <label for="circ_inp">Circle: </label>
+                    <input type="text" name="circ_inp" id="circ_inp">
+                </div>
+                <div>
+                    <label for="styl_inp">Style: </label>
+                    <input type="text" name="styl_inp" id="styl_inp">
+                </div>
+                <div>
+                    <label for="cata_inp">Catalyst: </label>
+                    <input type="text" name="cata_inp" id="cata_inp">
+                </div>
+                <div>
+                    <label for="ques_inp">Question: </label>
+                    <input type="text" name="ques_inp" id="ques_inp">
+                </div>
+                
+                <input type="submit" value="Confirm">
+            </form>
+
+
+            <!-- popup window content WHEN NEW ROLE PANEL CONTENT is created -->
+            <form id="new_rp_form" class="invisible">
+                <div>
+                    <label for="rp_content_title_inp">Title: </label>
+                    <input type="text" name="rp_content_title_inp" id="rp_content_title_inp">
+                </div>
+                <div>
+                    <label for="rp_content_text_inp">Text: </label>
+                    <textarea name="rp_content_text_inp" id="rp_content_text_inp" rows="10"></textarea>
+                </div>
+
+                <input type="submit" value="Confirm">
+            </form>
+
+            <div class="popup_spacer"></div>
+        </div>
+    </div>
+
+</body>
+</html>

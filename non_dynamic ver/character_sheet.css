@@ -1,0 +1,548 @@
+:root{
+    /** CSS DARK THEME PRIMARY COLORS */ 
+    --color-primary-100: #009688;
+    --color-primary-200: #3ba294;
+    --color-primary-300:  #59ada1;
+    --color-primary-400:  #73b9ae;
+    --color-primary-500:  #8bc5bb;
+    --color-primary-600:  #a3d0c8; 
+    /** CSS DARK THEME SURFACE COLORS */ 
+    --color-surface-100:  #121212;
+    --color-surface-100-translucent:  #12121299;
+    --color-surface-200:  #282828;
+    --color-surface-300:  #3f3f3f;
+    --color-surface-400:  #575757;
+    --color-surface-500:  #717171;
+    --color-surface-600:  #8b8b8b; 
+    /** CSS DARK THEME MIXED SURFACE COLORS */ 
+    --color-surface-mixed-100:  #1c3632;
+    --color-surface-mixed-200:  #324a46;
+    --color-surface-mixed-300:  #495e5a;
+    --color-surface-mixed-400:  #617370;
+    --color-surface-mixed-500:  #7a8986;
+    --color-surface-mixed-600:  #93a09d;  
+}  
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top_container{
+    background-color: var(--color-surface-100);
+    background-image: radial-gradient(ellipse at 0% 0%, var(--color-surface-100), #171e1d, var(--color-surface-mixed-100));
+    height: 100vh;
+    width: calc(100vw - 0.5rem);
+}
+
+#nav_bar{
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    width: 100%;
+    align-items: center;
+    padding: 0 5rem;
+    background-color: rgba(44,95,96,1);
+    background-image:  radial-gradient(ellipse at 20% 50%, rgba(44,95,96,1), rgba(0,0,0,1));
+}
+
+*::-webkit-scrollbar {
+    width: 0.5rem;
+}
+*::-webkit-scrollbar-track {
+    background: var(--color-surface-600);
+}
+*::-webkit-scrollbar-thumb {
+    background: var(--color-primary-400);
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-100);
+}
+
+.nav_img{
+    background-size: contain;
+    width: 20rem;
+}
+
+.nav_container span{
+    font-size: 1.5rem;
+    color: rgba(210, 171, 112, 1);
+}
+
+#nav_bar input[type='text']{
+    background-color: rgba(0,0,0,0);
+    color: rgba(210, 171, 112, 1);
+    border: none;
+    border-bottom: 2px solid rgba(210, 171, 112, 1);
+    font-size: 1.5rem;
+}
+
+.icon_button{
+    user-select: none;
+    cursor: pointer;
+}
+
+.material-symbols-outlined{
+    vertical-align: middle;
+}
+
+.main{
+    width: 100%;
+    height: calc(100% - 10rem);
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.nerve_panel, .role_panel, .marks_panel{
+    width: calc((100% - 3rem) / 3);
+}
+
+.nerve_panel{
+    background-color: var(--color-surface-100-translucent);
+    color: white;
+}
+
+.subpanel_title_bar{
+    background-color: var(--color-surface-mixed-100);
+    color: white;
+    height: 3rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.drive_and_max_node_container{
+    display: flex;
+    gap: 1rem;
+}
+
+.drives_title, .drive_container{
+    font-size: 1.25rem;
+    height: 1.25rem;
+}
+
+.max_title, .max_container{
+    height: .75rem;
+    font-size: 1rem;
+    margin-top: .25rem;
+}
+
+.max_container, .drive_container{
+    display: flex;
+    justify-content: space-around;
+    gap:2px;
+}
+
+.drive_and_max_spacer{
+    width: 1.5rem;
+}
+
+.drive_container input[type="checkbox"], .max_container input[type="checkbox"], .marks_container input[type="checkbox"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 0px;
+  
+    border: none;
+    transition: 0.2s all linear;
+
+    height: 100%;
+    width: .75rem;
+    background-color: var(--color-surface-500);
+}
+
+
+.drive_container input[type="checkbox"]:checked, .max_container input[type="checkbox"]:checked, .marks_container input[type="checkbox"]:checked{
+    background-color: var(--color-primary-100);
+}
+
+.drive_and_max_titles_container{
+    text-align: right;
+}
+
+
+.np_subpanel{
+    position: relative;
+}
+.subpanel_content_text_container{
+    display: flex;
+    align-items: center;
+    gap: .5rem; 
+}
+.subpanel_content_title, .subpanel_content_bullet{
+    font-size: 1.5rem;
+}
+.subpanel_content_text{
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.role_panel input[type="text"]{
+    font-size: 1rem;
+    color:white;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-bottom: white solid 2px;
+}
+
+.role_panel textarea{
+    color:white;
+    font-size: .8rem;
+    background-color: rgba(0,0,0,0);
+    border: white solid 2px;
+}
+
+
+.attrib_points_container{
+    padding: 5px 5px 5px 20px;
+}
+.attrib_points{
+    font-size: 2rem;
+    font-weight: 200;
+    user-select: none;
+    cursor: pointer;
+}
+.attrib_points_active{
+    font-weight:900;
+    color: var(--color-primary-100);
+}
+
+.subpanel_resistances_container{
+    position: absolute;
+    right: 0%;
+    top: 3rem;
+}
+.resistance_container{
+    display: flex;
+    align-items: center;
+}
+.resistance{
+    font-size: 2rem;
+    font-weight: 200;
+    user-select: none;
+    cursor: pointer;
+}
+.resistance_caption{
+    margin: .5rem auto;
+}
+
+
+.role_panel{
+    background-color: var(--color-surface-100-translucent);
+    color: white;
+    position: relative;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+.rp_main{
+    overflow-y: auto;
+    width: 100%;
+    max-height: calc(100% - 4rem);
+    text-align: center;
+}
+#role_select{
+    background-color: var(--color-surface-400);
+    color: white;
+}
+.rp_title_container{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+}
+.rp_subpanel_title, .ik_title, #role_select{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#add_specialty_content_container{
+    border-radius: 50%;
+    padding: .5rem;
+}
+#add_specialty_content_container:hover{
+    background-color: var(--color-primary-100);
+}
+#add_specialty_content_container:active{
+    background-color: var(--color-surface-mixed-200);
+}
+.rp_content_title{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.illumination_keys{
+    width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+}
+.rp_content{
+    text-align: left;
+    margin-top: 1rem;
+}
+.title_container{
+    font-size: 1.5rem;
+}
+.rp_content_data{
+    font-size: 1rem;
+    width: 100%;
+}
+.ik_content{
+    font-weight: 700;
+    width: calc( (100% - 2rem) / 3 );
+}
+
+
+/* MARKS PANEL */
+.marks_panel{
+    background-color: var(--color-surface-100-translucent);
+    color: white;
+}
+.marks_container{
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.marks_title_bar{
+    background-color: var(--color-surface-mixed-100);
+    color: white;
+    height: 3rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+.marks_spacer{
+    width: 3rem;
+}
+.marks_titles{
+    background-color: var(--color-surface-100-translucent);
+    color: white;
+    height: 1.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0 10px;
+}
+#body_marks, #brain_marks , #bleed_marks{
+    display: flex;
+    gap:2px;
+    width: 3rem;
+}
+.marks_titles p{
+    width: 3rem;
+}
+.marks_content{
+    padding: 0 10px;
+    font-size: 1.5rem;
+}
+.marks_content > *{
+    margin: 10px 0;
+}
+.marks_content h2{
+    font-size: 1.5rem;
+}
+
+.scar_text{
+    border: none;
+    border-bottom: white solid 2px;
+    background-color: transparent;
+    color: white;
+    width: 80%;
+}
+.rs_in_left{
+    border: none;
+    border-bottom: white solid 2px;
+    background-color: transparent;
+    color: white;
+    width: 60%;
+    margin-right: 5%;
+}
+.rs_in_right{
+    border: none;
+    border-bottom: white solid 2px;
+    background-color: transparent;
+    color: white;
+    width: 30%;
+}
+
+.gear_select{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.attrib_points_container input[type="checkbox"], .marks_content input[type="checkbox"], .resistance_container input[type="checkbox"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+  
+    border: .2rem solid var(--color-surface-mixed-100);
+    transition: 0.2s all linear;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+}
+
+.attrib_points_container input[type="checkbox"]:checked, .marks_content input[type="checkbox"]:checked, .resistance_container input[type="checkbox"]:checked{
+    border: .5rem solid #59ada1;
+    outline: unset !important /* I added this one for Edge (chromium) support */
+}
+
+.gear_text{
+    border: none;
+    border-bottom: white solid 2px;
+    background-color: transparent;
+    color: white;
+    width: 90%;
+}
+
+#new_rp_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+#new_rp_form div{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+@media screen and (max-width: 767px) {
+    html{
+        font-size: 10px;
+    }
+    .top_container{
+        width: 100vw;
+    }
+    #nav_bar{
+        padding: 0;
+    }
+    .nav_img{
+        width: 20%;
+    }
+    .nav_container span{
+        font-size: 1rem;
+    }
+    .main{
+        display: block;
+        overflow-y: scroll;
+    }
+    .nerve_panel, .role_panel, .marks_panel{
+        width: 90%;
+        margin: 2rem 5%;
+        height: auto;
+    }
+
+    .subpanel_title_bar{
+        height: 5rem;
+        padding: 5px;
+    }
+    .subpanel_resistances_container{
+        top: 5rem;
+    }
+
+    .drive_and_max_node_container{
+        display: flex;
+        gap: .5rem;
+    }
+    
+    .drives_title, .drive_container{
+        font-size: 2rem;
+        height: 2rem;
+    }
+    
+    .max_title, .max_container{
+        height: 1.25rem;
+        font-size: 1.25rem;
+        margin-top: .25rem;
+    }
+    
+    .drive_and_max_spacer{
+        width: 1rem;
+    }
+    
+    .drive , .max{
+        height: 100%;
+        width: 1.25rem;
+    }
+
+    .marks_title_bar{
+        height: 5rem;
+        padding: 0 10px;
+    }
+    .mark{
+        height: 3rem;
+        width: 1.5rem;
+    }
+    #body_marks, #brain_marks, #bleed_marks{
+        width: 4rem;
+    }
+    .marks_titles p{
+        width: 4rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html{
+        font-size: 8px;
+    }
+}
+
+/* VERY SPECIAL CASE */
+/* @media screen and (max-width: 720px) {
+    html{
+        font-size: 8px;
+    }
+    .role_panel{
+        padding: 0px;
+    }
+} */
+
+
+@media screen and (min-width: 768px) {
+    html{
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    html{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    html{
+        font-size: 24px;
+    }
+}
+
+.invisible{
+    display: none ! important;
+    /* height: 0px;
+    width: 0px; */
+}

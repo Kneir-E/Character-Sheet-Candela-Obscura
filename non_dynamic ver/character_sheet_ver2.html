@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <link rel="stylesheet" href="character_sheet.css">
+    <title>Character Sheet</title>
+</head>
+<div class="top_container">
+    <div id="nav_bar" class="nav_bar">
+        <img class="nav_img" src="https://d1vzi28wh99zvq.cloudfront.net/images/23533/_product_images/438694/candela_obscura_logo_stacked_gold.png" alt="Candela_Obscura_logo.png">
+        <div class="nav_container">
+            <span>Name:</span>
+            <input name="attr_name" type="text">
+            <br>
+            <span>Pronouns:</span>
+            <input name="attr_pronoun" type="text">
+            <br>
+            <span>Circle:</span>
+            <input name="attr_nav_circle" type="text">
+        </div>
+        <div class="nav_container">
+            <span>Style:</span>
+            <input name="attr_style" type="text">
+            <br>
+            <span>Catalyst:</span>    
+            <input name="attr_catalyst" type="text">
+            <br>
+            <span>Question:</span>
+            <input name="attr_question" type="text">
+        </div>
+    </div>
+
+
+    <div class="main">
+        <!-- NERVE, CUNNING, AND INTUITION PANEL -->
+        <div class="nerve_panel">
+            <div class="np_subpanel">
+                <div class="subpanel_title_bar">
+                    <p>NERVE</p>
+                    <div class="drive_and_max_node_container">
+                        <div class="drive_and_max_titles_container">
+                            <p class="drives_title">Drives:</p>
+                            <p class="max_title">Max:</p>
+                        </div>
+                        <div class="drive_and_max_list_container">
+                            <div id="" class="drive_container">
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <div class="drive_and_max_spacer"></div>
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <div class="drive_and_max_spacer"></div>
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                            </div>
+                            <div id="" class="max_container">
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <div class="drive_and_max_spacer"></div>
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <div class="drive_and_max_spacer"></div>
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subpanel_resistances_container">
+                    <div class="resistance_container">
+                        <input name="attr_r1_1" type="checkbox">
+                        <input name="attr_r1_2" type="checkbox">
+                        <input name="attr_r1_3" type="checkbox">
+                    </div>
+                    <div class="resistance_caption">RESISTANCE</div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Move</span>
+                        <span class="subpanel_content_text">run, dodge, navigate</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                    </div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Strike</span>
+                        <span class="subpanel_content_text">punch, break, knock down</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                    </div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Control</span>
+                        <span class="subpanel_content_text">drive, shoot, finesse</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                    </div>
+                </div>
+            </div>
+            <div class="np_subpanel">
+                <div class="subpanel_title_bar">
+                    <p>CUNNING</p>
+                    <div class="drive_and_max_node_container">
+                        <div class="drive_and_max_titles_container">
+                            <p class="drives_title">Drives:</p>
+                            <p class="max_title">Max:</p>
+                        </div>
+                        <div class="drive_and_max_list_container">
+                            <div id="" class="drive_container">
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <div class="drive_and_max_spacer"></div>
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <div class="drive_and_max_spacer"></div>
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                            </div>
+                            <div id="" class="max_container">
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <div class="drive_and_max_spacer"></div>
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <div class="drive_and_max_spacer"></div>
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subpanel_resistances_container">
+                    <div class="resistance_container">
+                        <input name="attr_n1" type="checkbox">
+                        <input name="attr_n1" type="checkbox">
+                        <input name="attr_n1" type="checkbox">
+                    </div>
+                    <div class="resistance_caption">RESISTANCE</div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Sway</span>
+                        <span class="subpanel_content_text">convince, command, consort</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                    </div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Read</span>
+                        <span class="subpanel_content_text">interpret body language, spot lies, gather motive</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                    </div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Hide</span>
+                        <span class="subpanel_content_text">sneak, distract, sleight of hand</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                    </div>
+                </div>
+            </div>
+            <div class="np_subpanel">
+                <div class="subpanel_title_bar">
+                    <p>INTUITION</p>
+                    <div class="drive_and_max_node_container">
+                        <div class="drive_and_max_titles_container">
+                            <p class="drives_title">Drives:</p>
+                            <p class="max_title">Max:</p>
+                        </div>
+                        <div class="drive_and_max_list_container">
+                            <div id="" class="drive_container">
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <div class="drive_and_max_spacer"></div>
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <div class="drive_and_max_spacer"></div>
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                                <input type="checkbox" class="drive" >
+                            </div>
+                            <div id="" class="max_container">
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <div class="drive_and_max_spacer"></div>
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <div class="drive_and_max_spacer"></div>
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                                <input type="checkbox" class="max" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subpanel_resistances_container">
+                    <div class="resistance_container">
+                        <input name="attr_n1" type="checkbox">
+                        <input name="attr_n1" type="checkbox">
+                        <input name="attr_n1" type="checkbox">
+                    </div>
+                    <div class="resistance_caption">RESISTANCE</div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Survey</span>
+                        <span class="subpanel_content_text">search, track, spot</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                    </div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Focus</span>
+                        <span class="subpanel_content_text">inspect, analyze, remember</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                    </div>
+                </div>
+                <div class="subpanel_content">
+                    <div class="subpanel_content_text_container">
+                        <span class="subpanel_content_bullet">◇</span>
+                        <span class="subpanel_content_title">Sense</span>
+                        <span class="subpanel_content_text">attune, channel, reveal</span>
+                    </div>
+                    <div class="attrib_points_container">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                        <input name="attr_attrib" type="checkbox">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROLE, SPECIALTY, AND ILLUMINATION KEYS PANEL -->
+        <div class="role_panel">
+            <div class="rp_main">
+                <div class="rp_title_container">
+                    <span class="rp_subpanel_title">ROLE: </span>
+                    <select name="attr_role_select" id="role_select" class="role_select">
+                        <option value="0">Slink</option>
+                        <option value="1">Scholar</option>
+                        <option value="2">Face</option>
+                        <option value="3">Weird</option>
+                        <option value="4">Muscle</option>
+                    </select>
+                </div>
+                <div id="role_content_container" class="rp_subpanel">
+                    <div class="rp_content">
+                        <span class="rp_content_title">◆</span>
+                        <input class="rp_subpanel_title" type="text" name="attr_" value="Scout: ">
+                        <br><br>
+                        <textarea class="rp_content_data" name="attr_" rows="3"> If you have time to observe a location, you can spend 1 Intuition to ask a question: What do I notice here that others do not see? What in this place might be of use to us? What path should we follow?</textarea>
+                    </div>
+
+                    <div class="rp_content">
+                        <span class="rp_content_title">◆</span>
+                        <input class="rp_subpanel_title" type="text" name="attr_" value=" ">
+                        <br><br>
+                        <textarea class="rp_content_data" name="attr_" rows="4"></textarea>
+                    </div>
+                    <div class="rp_content">
+                        <span class="rp_content_title">◆</span>
+                        <input class="rp_subpanel_title" type="text" name="attr_" value="">
+                        <br><br>
+                        <textarea class="rp_content_data" name="attr_" rows="4"></textarea>
+                    </div>
+                </div>
+                
+                <div class="rp_title_container">
+                    <span class="rp_subpanel_title">SPECIALTY: </span>
+                    <input class="rp_subpanel_title" type="text" name="attr_specialty_value" value="Criminal">
+                </div>
+
+                <div id="specialty_content_container" class="rp_subpanel">
+                    <div class="rp_content">
+                        <span class="rp_content_title">◆</span>
+                        <input class="rp_subpanel_title" type="text" name="attr_" value="Street Smarts: ">
+                        <br><br>
+                        <textarea class="rp_content_data" name="attr_" rows="4"> If you have time to observe a location, you can spend 1 Intuition to ask a question: What do I notice here that others do not see? What in this place might be of use to us? What path should we follow?</textarea>
+                    </div>
+                    <div class="rp_content">
+                        <span class="rp_content_title">◆</span>
+                        <input class="rp_subpanel_title" type="text" name="attr_" value="">
+                        <br><br>
+                        <textarea class="rp_content_data" name="attr_" rows="4"></textarea>
+                    </div>
+                    <div class="rp_content">
+                        <span class="rp_content_title">◆</span>
+                        <input class="rp_subpanel_title" type="text" name="attr_" value="">
+                        <br><br>
+                        <textarea class="rp_content_data" name="attr_" rows="4"></textarea>
+                    </div>
+                    <div class="rp_content">
+                        <span class="rp_content_title">◆</span>
+                        <input class="rp_subpanel_title" type="text" name="attr_" value="">
+                        <br><br>
+                        <textarea class="rp_content_data" name="attr_" rows="4"></textarea>
+                    </div>
+                    <div class="rp_content">
+                        <span class="rp_content_title">◆</span>
+                        <input class="rp_subpanel_title" type="text" name="attr_" value="">
+                        <br><br>
+                        <textarea class="rp_content_data" name="attr_" rows="4"></textarea>
+                    </div>
+                    <div class="rp_content">
+                        <span class="rp_content_title">◆</span>
+                        <input class="rp_subpanel_title" type="text" name="attr_" value="">
+                        <br><br>
+                        <textarea class="rp_content_data" name="attr_" rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="illumination_keys">
+                <span class="ik_title">ILLUMINATION KEYS</span>
+                <br>
+                <input class="ik_content" type="text" name="attr_" value="Do Something Illegal">
+                <span>|</span>
+                <input class="ik_content" type="text" name="attr_" value="Make A Deal">
+                <span>|</span>
+                <input class="ik_content" type="text" name="attr_" value="Stand Up To Authority">
+            </div>
+        </div>
+
+        <!-- MARKS -->
+        <div class="marks_panel">
+            <div class="marks_title_bar">
+                <p>MARKS</p>
+                <div class="marks_container">
+                    <div id="body_marks" class="body_marks">
+                        <input type="checkbox" class="mark">
+                        <input type="checkbox" class="mark">
+                        <input type="checkbox" class="mark">
+                    </div>
+
+                    <div class="marks_spacer"></div>
+
+                    <div id="brain_marks" class="brain_marks">
+                        <input type="checkbox" class="mark">
+                        <input type="checkbox" class="mark">
+                        <input type="checkbox" class="mark">
+                    </div>
+
+                    <div class="marks_spacer"></div>
+
+                    <div id="bleed_marks" class="bleed_marks">
+                        <input type="checkbox" class="mark">
+                        <input type="checkbox" class="mark">
+                        <input type="checkbox" class="mark">
+                    </div>
+
+                    <div class="marks_spacer"></div>
+                </div>
+            </div>
+            <div class="marks_titles">
+                <p>BODY</p>
+                <div class="marks_spacer"></div>
+                <p>BRAIN</p>
+                <div class="marks_spacer"></div>
+                <p>BLEED</p>
+                <div class="marks_spacer"></div>
+            </div>
+
+            <div class="marks_content">
+                <h2>SCARS: </h2>
+                <div id="scar_1">
+                    <input type="checkbox" name="attr_scar_1">
+                    <input name="attr_scar_1_input" type="text" class="scar_text ">
+                </div>
+                <div id="scar_2">
+                    <input type="checkbox" name="attr_scar_2">
+                    <input name="attr_scar_2_input" type="text" class="scar_text ">
+                </div>
+                <div id="scar_3">
+                    <input type="checkbox" name="attr_scar_3">
+                    <input name="attr_scar_3_input" type="text" class="scar_text ">
+                </div>
+            </div>
+            
+
+            <div class="marks_content">
+                <h2>RELATIONSHIPS: </h2>
+                <input name="attr_rs_in_1a" type="text" class="rs_in_left">
+                <input name="attr_rs_in_1b" type="text" class="rs_in_right">
+                <br>
+                <input name="attr_rs_in_2a" type="text" class="rs_in_left">
+                <input name="attr_rs_in_2b" type="text" class="rs_in_right">
+                <br>
+                <input name="attr_rs_in_3a" type="text" class="rs_in_left">
+                <input name="attr_rs_in_3b" type="text" class="rs_in_right">
+                <br>
+                <input name="attr_rs_in_4" type="text" class="rs_in_left">
+                <input name="attr_rs_in_4b" type="text" class="rs_in_right">
+                <br>
+            </div>
+
+            <div class="marks_content">
+                <h2>GEAR: </h2>
+                <h4>During each assignment, choose up to three: </h4>
+                <label><input name="attr_gear_1" type="checkbox">Bleed Detector</label>
+                <br>
+                <label><input name="attr_gear_2" type="checkbox">Hand Weapon</label>
+                <br>
+                <label><input name="attr_gear_3" type="checkbox">Bleed Containment Vial</label>
+                <br>
+                <label><input name="attr_gear_4" type="checkbox">Forged Documents</label>
+                <br>
+                <label><input name="attr_gear_5" type="checkbox">Burglary Equipment</label>
+                <br>
+                <label><input name="attr_gear_6" type="checkbox">Body Armor (Soak I Body)</label>
+                <br>
+                <div style="display: inline;"><input name="attr_gear_7" type="checkbox"><input name="attr_gear_text" type="text" class="gear_text"></div>
+            </div>
+        </div>
+    </div>
+</div>

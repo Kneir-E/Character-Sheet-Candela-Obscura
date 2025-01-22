@@ -1,0 +1,526 @@
+:root{
+    /** CSS DARK THEME PRIMARY COLORS */ 
+    --color-primary-100: #009688;
+    --color-primary-200: #3ba294;
+    --color-primary-300:  #59ada1;
+    --color-primary-400:  #73b9ae;
+    --color-primary-500:  #8bc5bb;
+    --color-primary-600:  #a3d0c8; 
+    /** CSS DARK THEME SURFACE COLORS */ 
+    --color-surface-100:  #121212;
+    --color-surface-100-translucent:  #12121299;
+    --color-surface-200:  #282828;
+    --color-surface-300:  #3f3f3f;
+    --color-surface-400:  #575757;
+    --color-surface-500:  #717171;
+    --color-surface-600:  #8b8b8b; 
+    /** CSS DARK THEME MIXED SURFACE COLORS */ 
+    --color-surface-mixed-100:  #1c3632;
+    --color-surface-mixed-200:  #324a46;
+    --color-surface-mixed-300:  #495e5a;
+    --color-surface-mixed-400:  #617370;
+    --color-surface-mixed-500:  #7a8986;
+    --color-surface-mixed-600:  #93a09d;  
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.sheet-top_container{
+    background-color: #121212;
+    background-image: radial-gradient(ellipse at 0% 0%, #121212, #171e1d, #1c3632);
+    height: 100vh;
+    width: calc(100vw - var(--custom-length) * 2);
+    --custom-length: 16px;
+}
+
+.sheet-nav_bar{
+    display: flex;
+    justify-content: space-between;
+    height: calc( var(--custom-length) * 10);
+    width: 100%;
+    align-items: center;
+    padding: 0 calc( var(--custom-length) * 5);
+    background-color: rgba(44,95,96,1);
+    background-image:  radial-gradient(ellipse at 20% 50%, rgba(44,95,96,1), rgba(0,0,0,1));
+}
+
+*::-webkit-scrollbar {
+    width: calc( var(--custom-length) * 0.5);
+}
+*::-webkit-scrollbar-track {
+    background: #8b8b8b;
+}
+*::-webkit-scrollbar-thumb {
+    background: #73b9ae;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: #009688;
+}
+
+.sheet-nav_img{
+    background-size: contain;
+    width: calc( var(--custom-length) * 20);
+}
+
+.sheet-nav_container span{
+    font-size: calc( var(--custom-length) * 1.5);
+    color: rgba(210, 171, 112, 1);
+}
+
+.sheet-nav_bar input[type='text']{
+    background-color: rgba(0,0,0,0);
+    color: rgba(210, 171, 112, 1);
+    border: none;
+    border-bottom: 2px solid rgba(210, 171, 112, 1);
+    font-size: calc( var(--custom-length) * 1.5);
+}
+
+.sheet-icon_button{
+    user-select: none;
+    cursor: pointer;
+}
+
+.sheet-material-symbols-outlined{
+    vertical-align: middle;
+}
+
+.sheet-main{
+    width: 100%;
+    height: calc(100% - 10 * var(--custom-length) );
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.sheet-nerve_panel, .sheet-role_panel, .sheet-marks_panel{
+    width: calc((100% - 3 * var(--custom-length) ) / 3);
+}
+
+.sheet-nerve_panel{
+    background-color: #12121299;
+    color: white;
+}
+
+.sheet-subpanel_title_bar{
+    background-color: #1c3632;
+    color: white;
+    height: calc( var(--custom-length) * 3 );
+    font-size: calc( var(--custom-length) * 2 );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.sheet-drive_and_max_node_container{
+    display: flex;
+    gap: calc( var(--custom-length) * 1 );
+}
+
+.sheet-drives_title, .sheet-drive_container{
+    font-size: calc( var(--custom-length) * 1.25);
+    height: calc( var(--custom-length) * 1.25);
+}
+
+.sheet-max_title, .sheet-max_container{
+    height: calc( var(--custom-length) * .75);
+    font-size: calc( var(--custom-length) * 1);
+    margin-top: calc( var(--custom-length) * .25);
+}
+
+.sheet-max_container, .sheet-drive_container{
+    display: flex;
+    justify-content: space-around;
+    gap:2px;
+}
+
+.sheet-drive_and_max_spacer{
+    width: calc( var(--custom-length) * 1.5);
+}
+
+.sheet-drive_container input[type="checkbox"], .sheet-max_container input[type="checkbox"], .sheet-marks_container input[type="checkbox"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 0px;
+  
+    border: none;
+    transition: 0.2s all linear;
+
+    height: 100%;
+    width: calc( var(--custom-length) * .75);
+    background-color: #717171;
+}
+
+
+.sheet-drive_container input[type="checkbox"]:checked, .sheet-max_container input[type="checkbox"]:checked, .sheet-marks_container input[type="checkbox"]:checked{
+    background-color: #009688;
+}
+
+.sheet-drive_and_max_titles_container{
+    text-align: right;
+}
+
+
+.sheet-np_subpanel{
+    position: relative;
+}
+.sheet-subpanel_content_text_container{
+    display: flex;
+    align-items: center;
+    gap: calc( var(--custom-length) * .5); 
+}
+.sheet-subpanel_content_title, .sheet-subpanel_content_bullet{
+    font-size: calc( var(--custom-length) * 1.5);
+}
+.sheet-subpanel_content_text{
+    font-size: calc( var(--custom-length) * 1);
+    font-style: italic;
+}
+
+.sheet-role_panel input[type="text"]{
+    font-size: calc( var(--custom-length) * 1);
+    color:white;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-bottom: white solid 2px;
+}
+
+.sheet-role_panel textarea{
+    color:white;
+    font-size: calc( var(--custom-length) * .8);
+    background-color: rgba(0,0,0,0);
+    border: white solid 2px;
+}
+
+
+.sheet-attrib_points_container{
+    padding: 5px 5px 5px 20px;
+}
+.sheet-attrib_points{
+    font-size: calc( var(--custom-length) * 2);
+    font-weight: 200;
+    user-select: none;
+    cursor: pointer;
+}
+.sheet-attrib_points_active{
+    font-weight:900;
+    color: #009688;
+}
+
+.sheet-subpanel_resistances_container{
+    position: absolute;
+    right: 0%;
+    top: calc( var(--custom-length) * 3);
+}
+.sheet-resistance_container{
+    display: flex;
+    align-items: center;
+}
+.sheet-resistance{
+    font-size: calc( var(--custom-length) * 2);
+    font-weight: 200;
+    user-select: none;
+    cursor: pointer;
+}
+.sheet-resistance_caption{
+    margin: calc( var(--custom-length) * .5) auto;
+}
+
+
+.sheet-role_panel{
+    background-color: #12121299;
+    color: white;
+    position: relative;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+.sheet-rp_main{
+    overflow-y: auto;
+    width: 100%;
+    max-height: calc(100% - 4 * var(--custom-length) );
+    text-align: center;
+}
+.sheet-role_select{
+    background-color: #575757;
+    color: white;
+}
+.sheet-rp_title_container{
+    display: flex;
+    width: 100%;
+    gap: calc( var(--custom-length) * 1);
+    align-items: center;
+    justify-content: center;
+    margin: calc( var(--custom-length) * 1) auto;
+}
+.sheet-rp_subpanel_title, .sheet-ik_title, .sheet-role_select{
+    font-size: calc( var(--custom-length) * 1.5);
+    font-weight: 700;
+}
+.sheet-rp_content_title{
+    font-size: calc( var(--custom-length) * 1.1);
+    font-weight: bold;
+}
+.sheet-illumination_keys{
+    width: 100%;
+    height: calc( var(--custom-length) * 4);
+    margin-top: calc( var(--custom-length) * 1);
+}
+.sheet-rp_content{
+    text-align: left;
+    margin-top: calc( var(--custom-length) * 1);
+}
+.sheet-title_container{
+    font-size: calc( var(--custom-length) * 1.5);
+}
+.sheet-rp_content_data{
+    font-size: calc( var(--custom-length) * 1);
+    width: 100%;
+}
+.sheet-ik_content{
+    font-weight: 700;
+    width: calc( (100% - calc( var(--custom-length) * 2)) / 3 );
+}
+
+
+/* MARKS PANEL */
+.sheet-marks_panel{
+    background-color: #12121299;
+    color: white;
+}
+.sheet-marks_container{
+    height: calc( var(--custom-length) * 2);
+    display: flex;
+    justify-content: space-around;
+}
+
+.sheet-marks_title_bar{
+    background-color: #1c3632;
+    color: white;
+    height: calc( var(--custom-length) * 3);
+    font-size: calc( var(--custom-length) * 2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+.sheet-marks_spacer{
+    width: calc( var(--custom-length) * 3);
+}
+.sheet-marks_titles{
+    background-color: #12121299;
+    color: white;
+    height: calc( var(--custom-length) * 1.5);
+    font-size: calc( var(--custom-length) * 1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0 10px;
+}
+.sheet-body_marks, .sheet-brain_marks , .sheet-bleed_marks{
+    display: flex;
+    gap:2px;
+    width: calc( var(--custom-length) * 3);
+}
+.sheet-marks_titles p{
+    width: calc( var(--custom-length) * 3);
+}
+.sheet-marks_content{
+    padding: 0 10px;
+    font-size: calc( var(--custom-length) * 1.5);
+}
+.sheet-marks_content > *{
+    margin: 10px 0;
+}
+.sheet-marks_content h2{
+    font-size: calc( var(--custom-length) * 1.5);
+}
+
+.sheet-scar_text{
+    border: none;
+    border-bottom: white solid 2px;
+    background-color: transparent;
+    color: white;
+    width: 80%;
+}
+.sheet-rs_in_left{
+    border: none;
+    border-bottom: white solid 2px;
+    background-color: transparent;
+    color: white;
+    width: 60%;
+    margin-right: 5%;
+}
+.sheet-rs_in_right{
+    border: none;
+    border-bottom: white solid 2px;
+    background-color: transparent;
+    color: white;
+    width: 30%;
+}
+
+.sheet-gear_select{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sheet-attrib_points_container input[type="checkbox"], .sheet-marks_content input[type="checkbox"], .sheet-resistance_container input[type="checkbox"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: calc( var(--custom-length) * 1.5);
+    height: calc( var(--custom-length) * 1.5);
+  
+    border: calc( var(--custom-length) * .2) solid #1c3632;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+}
+
+.sheet-attrib_points_container input[type="checkbox"]:checked, .sheet-marks_content input[type="checkbox"]:checked, .sheet-resistance_container input[type="checkbox"]:checked{
+    border: calc( var(--custom-length) * .5 ) solid #59ada1;
+    outline: unset !important /* I added this one for Edge (chromium) support */
+}
+
+.sheet-gear_text{
+    border: none;
+    border-bottom: white solid 2px;
+    background-color: transparent;
+    color: white;
+    width: 90%;
+}
+
+@media screen and (max-width: 767px) {
+    .sheet-top_container{
+        --custom-length: 10px;
+        width: 100vw;
+    }
+    .sheet-nav_bar{
+        padding: 0;
+    }
+    .sheet-nav_img{
+        width: 20%;
+    }
+    .sheet-nav_container span{
+        font-size: calc( var(--custom-length) * 1);
+    }
+    .sheet-main{
+        display: block;
+        overflow-y: scroll;
+    }
+    .sheet-nerve_panel, .sheet-role_panel, .sheet-marks_panel{
+        width: 90%;
+        margin: calc( var(--custom-length) * 2) 5%;
+        height: auto;
+    }
+
+    .sheet-subpanel_title_bar{
+        height: calc( var(--custom-length) * 5);
+        padding: 5px;
+    }
+    .sheet-subpanel_resistances_container{
+        top: calc( var(--custom-length) * 5);
+    }
+
+    .sheet-drive_and_max_node_container{
+        display: flex;
+        gap: calc( var(--custom-length) * .5);
+    }
+    
+    .sheet-drives_title, .sheet-drive_container{
+        font-size: calc( var(--custom-length) * 2);
+        height: calc( var(--custom-length) * 2);
+    }
+    
+    .sheet-max_title, .sheet-max_container{
+        height: calc( var(--custom-length) * 1.25);
+        font-size: calc( var(--custom-length) * 1.25);
+        margin-top: calc( var(--custom-length) * .25);
+    }
+    
+    .sheet-drive_and_max_spacer{
+        width: calc( var(--custom-length) * 1);
+    }
+    
+    .sheet-drive , .sheet-max{
+        height: 100%;
+        width: calc( var(--custom-length) * 1.25);
+    }
+
+    .sheet-marks_title_bar{
+        height: calc( var(--custom-length) * 5);
+        padding: 0 10px;
+    }
+    .sheet-mark{
+        height: calc( var(--custom-length) * 3);
+        width: calc( var(--custom-length) * 1.5);
+    }
+    .sheet-body_marks, .sheet-brain_marks, .sheet-bleed_marks{
+        width: calc( var(--custom-length) * 4);
+    }
+    .sheet-marks_titles p{
+        width: calc( var(--custom-length) * 4);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .sheet-top_container{
+        --custom-length: 8px;
+    }
+}
+
+/* VERY SPECIAL CASE */
+/* @media screen and (max-width: 720px) {
+    html{
+        font-size: 8px;
+    }
+    .role_panel{
+        padding: 0px;
+    }
+} */
+
+
+@media screen and (min-width: 768px) {
+    .sheet-top_container{
+        --custom-length: 8px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .sheet-top_container{
+        --custom-length: 10px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .sheet-top_container{
+        --custom-length: 16px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .sheet-top_container{
+        --custom-length: 24px;
+    }
+}
+
+.sheet-invisible{
+    display: none ! important;
+    /* height: 0px;
+    width: 0px; */
+}
